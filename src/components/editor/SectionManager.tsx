@@ -65,7 +65,7 @@ export const SectionManager: React.FC<SectionManagerProps> = ({
   };
 
   return (
-    <div className="bg-slate-950/90 border-b border-slate-800 px-4 py-2 flex items-center justify-between gap-4 overflow-x-auto shrink-0 select-none">
+    <div className="bg-slate-950/90 border-b border-slate-800 px-3 py-2 sm:px-4 flex items-center justify-between gap-3 overflow-x-auto shrink-0 select-none">
       {/* Sections Tab List */}
       <div className="flex items-center gap-1.5 min-w-max">
         <span className="text-slate-500 text-xs font-semibold uppercase tracking-wider flex items-center gap-1 mr-1">

@@ -581,9 +581,9 @@ export const EditorWorkspace: React.FC<EditorWorkspaceProps> = ({
   const activeBarsInView = activeSection?.barIds.map((bId) => doc.bars[bId]).filter(Boolean) || [];
 
   return (
-    <div className="flex flex-col h-full bg-slate-950 text-slate-100 select-none overflow-hidden">
+    <div className="flex min-w-0 flex-col h-full bg-slate-950 text-slate-100 select-none overflow-hidden">
       {/* Top Studio Control Bar */}
-      <div className="flex items-center justify-between px-5 py-2.5 bg-slate-900 border-b border-slate-800 shrink-0 gap-4">
+      <div className="flex flex-wrap items-center justify-between px-3 py-2 sm:px-5 sm:py-2.5 bg-slate-900 border-b border-slate-800 shrink-0 gap-2 sm:gap-4">
         {/* Left: Title & Save Status */}
         <div className="flex items-center gap-3">
           <button
@@ -770,9 +770,9 @@ export const EditorWorkspace: React.FC<EditorWorkspaceProps> = ({
       <div className="flex-1 flex overflow-hidden">
         {/* Editor Grid Column */}
         {(viewMode === 'editor' || viewMode === 'split') && (
-          <div
-            className={`flex-1 flex flex-col overflow-y-auto p-5 space-y-4 ${
-              viewMode === 'split' ? 'max-w-[55%] border-r border-slate-800' : 'w-full'
+<div
+              className={`flex-1 min-w-0 flex flex-col overflow-y-auto p-3 sm:p-5 space-y-4 ${
+              viewMode === 'split' ? 'lg:max-w-[55%] lg:border-r border-slate-800' : 'w-full'
             }`}
           >
             {/* Section Banner */}

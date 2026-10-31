@@ -117,7 +117,7 @@ export const BarCard: React.FC<BarCardProps> = ({
         isActive
           ? 'bg-slate-900/95 border-sky-500/70 shadow-lg shadow-sky-950/30 ring-1 ring-sky-500/50'
           : 'bg-slate-900/50 border-slate-800 hover:border-slate-700'
-      } p-4 space-y-3.5`}
+      } p-3 sm:p-4 space-y-3.5`}
     >
       {/* Bar Header Bar */}
       <div className="flex items-center justify-between pb-2.5 border-b border-slate-800">

@@ -90,7 +90,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   };
 
   return (
-    <div className="flex-1 overflow-y-auto bg-slate-950 p-8 space-y-8 max-w-4xl mx-auto w-full">
+    <div className="flex-1 min-w-0 overflow-y-auto bg-slate-950 px-4 py-5 sm:p-6 lg:p-8 space-y-6 lg:space-y-8 max-w-4xl mx-auto w-full">
       {/* Hidden file input */}
       <input
         type="file"

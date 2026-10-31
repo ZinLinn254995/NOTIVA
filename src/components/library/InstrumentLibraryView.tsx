@@ -167,7 +167,7 @@ export const InstrumentLibraryView: React.FC<InstrumentLibraryViewProps> = ({
   };
 
   return (
-    <div className="flex-1 overflow-y-auto bg-slate-950 p-8 space-y-6 max-w-7xl mx-auto w-full">
+    <div className="flex-1 min-w-0 overflow-y-auto bg-slate-950 px-4 py-5 sm:p-6 lg:p-8 space-y-5 lg:space-y-6 max-w-7xl mx-auto w-full">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-800">
         <div>
@@ -178,7 +178,7 @@ export const InstrumentLibraryView: React.FC<InstrumentLibraryViewProps> = ({
         </div>
 
         {/* Global Arrangement Mode Selector */}
-        <div className="flex items-center gap-2 bg-slate-900 p-1.5 rounded-xl border border-slate-800 text-xs self-start md:self-auto">
+        <div className="flex max-w-full flex-wrap items-center gap-1.5 bg-slate-900 p-1.5 rounded-xl border border-slate-800 text-xs self-start md:self-auto">
           <span className="text-slate-400 font-semibold px-2">Arrangement:</span>
           {(['ALL', 'Only Rhythm', 'Drum Only', 'Custom Arrangement'] as const).map((m) => (
             <button
@@ -197,7 +197,7 @@ export const InstrumentLibraryView: React.FC<InstrumentLibraryViewProps> = ({
       </div>
 
       {/* Tabs */}
-      <div className="flex items-center gap-1 border-b border-slate-800 pb-2">
+      <div className="flex items-center gap-1 overflow-x-auto border-b border-slate-800 pb-2">
         <button
           onClick={() => setActiveTab('symbols')}
           className={`flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-lg transition-colors ${
