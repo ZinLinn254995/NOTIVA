@@ -1,0 +1,6 @@
+{
+  "name": "NOTIVA",
+  "description": "Manual Music Notation Studio. Write Music. Shape Ideas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
