@@ -105,7 +105,7 @@ export const SheetPreview: React.FC<SheetPreviewProps> = ({
   return (
     <div className="flex flex-col h-full bg-slate-900 border-l border-slate-800">
       {/* Top Toolbar */}
-      <div className="flex items-center justify-between px-4 py-3 bg-slate-950/80 border-b border-slate-800 shrink-0">
+      <div className="flex flex-wrap items-center justify-between gap-2 px-3 py-2 sm:px-4 sm:py-3 bg-slate-950/80 border-b border-slate-800 shrink-0">
         {/* Mode Switcher */}
         <div className="flex items-center gap-1 bg-slate-900 p-1 rounded-lg border border-slate-800">
           <button
@@ -192,7 +192,7 @@ export const SheetPreview: React.FC<SheetPreviewProps> = ({
       {/* SVG Container Canvas */}
       <div
         ref={containerRef}
-        className={`flex-1 overflow-auto p-6 flex justify-center ${
+        className={`flex-1 min-w-0 overflow-auto p-3 sm:p-6 flex justify-start sm:justify-center ${
           isExportMode ? 'bg-slate-200' : 'bg-slate-950'
         }`}
       >

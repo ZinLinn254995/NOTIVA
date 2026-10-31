@@ -49,7 +49,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
   );
 
   return (
-    <div className="flex-1 overflow-y-auto bg-slate-950 p-8 space-y-8 max-w-7xl mx-auto w-full">
+    <div className="flex-1 min-w-0 overflow-y-auto bg-slate-950 px-4 py-5 sm:p-6 lg:p-8 space-y-6 lg:space-y-8 max-w-7xl mx-auto w-full">
       {/* Studio Banner */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800/80">
         <div>
